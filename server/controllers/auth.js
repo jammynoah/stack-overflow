@@ -59,7 +59,7 @@ export const forgetPassword = async (req, res) => {
         });
 
         const mailOptions = {
-            from: "sahilagvekar230@gmail.com",
+            from: "shukladurgesh64@gmail.com",
             to: req.body.email,
             subject: "Reset Password",
             html: `<h1>Reset Your Password</h1>
