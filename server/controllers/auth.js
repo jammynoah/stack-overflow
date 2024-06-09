@@ -5,7 +5,7 @@ import users from "../models/auth.js"
 import nodemailer from 'nodemailer'
 
 const test = 'iamaavanishsingh121299';
-// const test = 'sailsagvekar230';
+
 
 export const signup=async(req,res)=>{
 const {name,email,password}=req.body;
@@ -53,8 +53,8 @@ export const forgetPassword = async (req, res) => {
         const transporter = nodemailer.createTransport({
             service: "gmail",
             auth: {
-                user: "sahilsagvekar230@gmail.com",
-                pass: "ktba csjv lptx fvkg", 
+                user: "shukladurgesh64@gmail.com",
+                pass: "dviw ydje igsj zxuw", 
             },
         });
 
@@ -64,7 +64,7 @@ export const forgetPassword = async (req, res) => {
             subject: "Reset Password",
             html: `<h1>Reset Your Password</h1>
                    <p>Click on the following link to reset your password:</p>
-                   <a href="http://localhost:3000/reset-password/${token}">Reset Password</a>
+                   <a href="https://stack-overflow-git-main-jammynoahs-projects.vercel.app/reset-password/${token}">Reset Password</a>
                    <p>The link will expire in 10 minutes.</p>
                    <p>If you didn't request a password reset, please ignore this email.</p>`,
         };
